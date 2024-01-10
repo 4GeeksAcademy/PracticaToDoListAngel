@@ -29,6 +29,10 @@ const Home = () => {
 		}
 	}
 
+	const deleteTask = (index) => {
+		setTask(task.filter((_, i) => i !== index));
+	  };
+
 	return (
 		<div className="container text-center">
 			<h1>todoList</h1>
@@ -37,7 +41,7 @@ const Home = () => {
 			</form>
 			<ul>
 				{task.map((task, i) => (
-					<li key={i}>{task}<i className="far fa-trash-alt"></i></li>
+					<li key={i}>{task}<i className="far fa-trash-alt" onClick={() => deleteTask(i)}></i></li>
 				))}
 			</ul>
 		</div>
