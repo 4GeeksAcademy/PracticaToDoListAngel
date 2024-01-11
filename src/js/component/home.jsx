@@ -44,6 +44,7 @@ const Home = () => {
 					<li key={i}>{task}<i class="far fa-trash-alt" onClick={() => deleteTask(i)}></i></li>
 				))}
 			</ul>
+			<div>{task.length}</div>
 		</div>
 	);
 };
