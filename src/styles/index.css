@@ -1,14 +1,14 @@
 body {
-    background-color: darkgrey;
+    background-color: #565cc2;
 }
 
 div {
-    color: white
+    color: white;
 }
 
 input {
     color: black;
-    background-color: beige;
+    background-color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     
@@ -16,14 +16,23 @@ input {
 
 h1 {
     margin-top: 50px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: "Constantia", sans-serif;
 }
 
 ul li {
     font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
     list-style: none;
     border: 1px solid beige;
     padding: 5px;
     margin-left: 200px;
     margin-right: 200px;
+    background-color: #252383;
 }
+
+i {
+    margin-left: 500px;
+    color: whitesmoke;
+}
+
+

@@ -35,13 +35,13 @@ const Home = () => {
 
 	return (
 		<div className="container text-center">
-			<h1>todoList</h1>
+			<h1><i class="far fa-calendar-alt container d-inline"></i>todoList</h1>
 			<form onSubmit={addTasks}>
 				<input type="text" onChange={handleChanges} value={newTask} placeholder="¿Qué necesito hacer?" />
 			</form>
 			<ul>
-				{task.map((task, i) => (
-					<li key={i}>{task}<i className="far fa-trash-alt" onClick={() => deleteTask(i)}></i></li>
+			{task.map((task, i) => (
+					<li key={i}>{task}<i class="far fa-trash-alt" onClick={() => deleteTask(i)}></i></li>
 				))}
 			</ul>
 		</div>
