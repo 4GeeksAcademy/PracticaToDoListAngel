@@ -21,8 +21,8 @@ const Home = () => {
 		}
 	}*/
 
-	const addTasks = (e) => {
-		e.preventDefault();
+	const addTasks = (event) => {
+		event.preventDefault();
 		if (newTask.trim() !== '') {
 			setTask([...task, newTask])
 			setNewTask('')
